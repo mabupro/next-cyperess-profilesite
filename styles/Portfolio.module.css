@@ -1,0 +1,15 @@
+/* Container Styles */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f9fc;
+}
+
+/* Body Styles */
+.body {
+    background-color: #ecf0f1;
+    color: #34495e;
+    padding: 20px;
+}
