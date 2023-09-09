@@ -1,31 +1,31 @@
 /* eslint-disable @typescript-eslint/no-namespace */
 // ***********************************************************
-// This example support/component.ts is processed and
-// loaded automatically before your test files.
+// この例の support/component.ts は処理され、
+// テストファイルの前に自動的にロードされます。
 //
-// This is a great place to put global configuration and
-// behavior that modifies Cypress.
+// これは、Cypressを変更するグローバルな設定や
+// 振る舞いを置くのに適しています。
 //
-// You can change the location of this file or turn off
-// automatically serving support files with the
-// 'supportFile' configuration option.
+// このファイルの場所を変更するか、
+// 'supportFile' 設定オプションでサポートファイルの自動提供を
+// オフにすることができます。
 //
-// You can read more here:
+// 詳細はこちらで読むことができます：
 // https://on.cypress.io/configuration
 // ***********************************************************
 
-// Import commands.js using ES2015 syntax:
+// ES2015の構文を使用して commands.js をインポートします：
 import './commands'
 
-// Alternatively you can use CommonJS syntax:
+// あるいは、CommonJSの構文を使用することもできます：
 // require('./commands')
 
 import { mount } from 'cypress/react18'
 
-// Augment the Cypress namespace to include type definitions for
-// your custom command.
-// Alternatively, can be defined in cypress/support/component.d.ts
-// with a <reference path="./component" /> at the top of your spec.
+// Cypressの名前空間を拡張して、
+// カスタムコマンドの型定義を含めます。
+// あるいは、cypress/support/component.d.ts で定義することができ、
+// 仕様のトップに <reference path="./component" /> を持つことができます。
 declare global {
   namespace Cypress {
     interface Chainable {
@@ -36,5 +36,5 @@ declare global {
 
 Cypress.Commands.add('mount', mount)
 
-// Example use:
+// 使用例：
 // cy.mount(<MyComponent />)

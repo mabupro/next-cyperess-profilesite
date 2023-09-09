@@ -1,40 +1,39 @@
 /// <reference types="cypress" />
 // ***********************************************
-// This example commands.ts shows you how to
-// create various custom commands and overwrite
-// existing commands.
+// この例の commands.ts は、さまざまなカスタムコマンドの
+// 作成方法や既存のコマンドの上書き方法を示しています。
 //
-// For more comprehensive examples of custom
-// commands please read more here:
+// カスタムコマンドのより包括的な例については、
+// 以下を参照してください：
 // https://on.cypress.io/custom-commands
 // ***********************************************
 //
 //
-// -- This is a parent command --
+// -- これは親コマンドです --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
 //
-// -- This is a child command --
+// -- これは子コマンドです --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
 //
 //
-// -- This is a dual command --
+// -- これは二重コマンドです --
 // Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
 //
 //
-// -- This will overwrite an existing command --
+// -- これは既存のコマンドを上書きします --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 //
 // declare global {
-//   namespace Cypress {
-//     interface Chainable {
-//       login(email: string, password: string): Chainable<void>
-//       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
-//       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
-//       visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>
-//     }
+//  namespace Cypress {
+//   interface Chainable {
+//    login(email: string, password: string): Chainable<void>
+//    drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
+//    dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
+//    visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>
 //   }
+//  }
 // }
 
-// Prevent TypeScript from reading file as legacy script
+// TypeScriptがファイルをレガシースクリプトとして読み取るのを防ぐ
 export {}

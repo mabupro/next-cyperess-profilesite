@@ -1,23 +1,23 @@
 import AboutComponent from './about-component'
 /* eslint-disable */
-// Disable ESLint to prevent failing linting inside the Next.js repo.
-// If you're using ESLint on your project, we recommend installing the ESLint Cypress plugin instead:
+// ESLintを無効にすることで、Next.jsリポジトリ内でのリントの失敗を防ぎます。
+// もしあなたのプロジェクトでESLintを使用している場合、代わりにESLint Cypressプラグインをインストールすることをおすすめします：
 // https://github.com/cypress-io/eslint-plugin-cypress
 
-// Cypress Component Test
+// Cypress コンポーネント テスト
 describe('<AboutComponent />', () => {
-  it('should render and display expected content', () => {
-    // Mount the React component for the About page
+  it('期待されるコンテンツを表示してレンダリングする必要があります', () => {
+    // AboutページのReactコンポーネントをマウント
     cy.mount(<AboutComponent />)
 
-    // The new page should contain an h1 with "About page"
+    // 新しいページには"About Page"というh1が含まれている必要があります
     cy.get('h1').contains('About Page')
 
-    // Validate that a link with the expected URL is present
-    // *Following* the link is better suited to an E2E test
+    // 期待されるURLのリンクが存在することを検証します
+    // リンクを*フォローする*のはE2Eテストにより適しています
     cy.get('a[href="/"]').should('be.visible')
   })
 })
 
-// Prevent TypeScript from reading file as legacy script
+// TypeScriptがファイルをレガシースクリプトとして読み取るのを防ぐ
 export {}
