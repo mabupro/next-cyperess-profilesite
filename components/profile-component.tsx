@@ -1,19 +1,11 @@
-import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/Profile.module.css';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import MenuIcon from '@mui/icons-material/Menu';
+import Header from './module/Header-component';
 
-export default function ProfileComponent() {
+const ProfileComponent: React.FC = () => {
     return (
         <div className={styles.container}>
-            <header className={styles.header}>
-                <Link href="/" className={styles.backlink}>
-                    <ArrowBackIosIcon className={styles.arrowbackicon} />
-                </Link>
-                <h1 className={styles.h1}>Profile Page</h1>
-                <MenuIcon className={styles.menuicon} />
-            </header>
+            <Header title="Profile Page" />
 
             <div className={styles.body}>
                 <h2>プロフィール</h2>
@@ -44,3 +36,5 @@ export default function ProfileComponent() {
         </div>
     );
 }
+
+export default ProfileComponent;

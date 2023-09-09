@@ -23,14 +23,15 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <Link href="/about" className={styles.card}>
-            <h2>About Page &rarr;</h2>
-            <p>Cypress will test if this link is working.</p>
-          </Link>
 
           <Link href="/profile" className={styles.card}>
             <h2>Profile Page &rarr;</h2>
             <p>My profile page. education create page.</p>
+          </Link>
+
+          <Link href="/portfolio" className={styles.card}>
+            <h2>Portfolio Page &rarr;</h2>
+            <p>My portfolio page. education create page.</p>
           </Link>
 
           <a href="https://nextjs.org/docs" className={styles.card}>
