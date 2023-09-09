@@ -28,6 +28,11 @@ export default function Home() {
             <p>Cypress will test if this link is working.</p>
           </Link>
 
+          <Link href="/profile" className={styles.card}>
+            <h2>Profile Page &rarr;</h2>
+            <p>My profile page. education create page.</p>
+          </Link>
+
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
