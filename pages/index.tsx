@@ -34,6 +34,11 @@ export default function Home() {
             <p>My portfolio page. education create page.</p>
           </Link>
 
+          <Link href="/create" className={styles.card}>
+            <h2>ArticlePost Page &rarr;</h2>
+            <p>My ArticlePost page. education create page.</p>
+          </Link>
+
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
